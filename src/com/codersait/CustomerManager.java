@@ -4,7 +4,11 @@ public class CustomerManager implements ICustomerService {
     private ICustomerDao customerDao;
 
     //constructor injection
-    public CustomerManager(ICustomerDao customerDao) {
+//    public CustomerManager(ICustomerDao customerDao) {
+//        this.customerDao = customerDao;
+//    }
+    // setter injection
+    public void setCustomerDao(ICustomerDao customerDao) {
         this.customerDao = customerDao;
     }
 

@@ -10,7 +10,8 @@
 
     </bean>
     <bean id="service" class="com.codersait.CustomerManager">
-        <constructor-arg ref="database"></constructor-arg>
+<!--        <constructor-arg ref="database"></constructor-arg>-->
+        <property name="customerDao" ref="database"></property>
     </bean>
 
 </beans>
