@@ -6,8 +6,8 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-    <bean id="database" class="com.codersait.MsSqlCustomerDao">
-
+    <bean id="database" class="com.codersait.CustomerDao">
+    <property name="connectionString" value="--Oracle string--"></property>
     </bean>
     <bean id="service" class="com.codersait.CustomerManager">
 <!--        <constructor-arg ref="database"></constructor-arg>-->
