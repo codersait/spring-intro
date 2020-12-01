@@ -1,8 +1,9 @@
 package com.codersait;
 
-public class CustomerManager {
+public class CustomerManager implements ICustomerService {
     private ICustomerDao customerDao;
 
+    //constructor injection
     public CustomerManager(ICustomerDao customerDao) {
         this.customerDao = customerDao;
     }
